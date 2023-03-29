@@ -1,23 +1,17 @@
 import logo from './logo.svg';
 import './App.css';
+import { Col, Row } from 'antd';
+import SideMenu from './components/sideMenu';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="app">
+      <Row className='full-height'>
+        <Col span={8}>
+          <SideMenu/>
+        </Col>
+        <Col span={16}>Content</Col>
+      </Row>
     </div>
   );
 }

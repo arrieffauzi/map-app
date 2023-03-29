@@ -1,0 +1,29 @@
+.full-height {
+  height: 100vh;
+}
+
+.side-container {
+    flex-direction: row;
+    display: flex;
+}
+
+.menu {
+  flex: 0.3;
+}
+
+.menu-item{
+    border-bottom: solid 1px;
+    /* border-top: solid 1px; */
+}
+
+.menu-content{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    align-items: center;
+}
+
+.filter {
+  flex: 1;
+}
